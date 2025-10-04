@@ -1,34 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <div className='mind-h-screen p-4 md:p-6 text-zinc-900'>
+      <header className='max-w-7xl mx-auto mb-4'>
+        <h1 className='text-2xl font-extrabold'>MapMandate</h1>
+        <p className='text-sm text-zinc-600'>Interactive U.S. Presidential Electoral Map</p>
+      </header>
+      <main className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-4'>
+        <section className='space-y-3'>
+          <div className='bg-white/90 rounded-xl shadow p-3'>
+            TOPBAR PLACEHOLDER
+          </div>
+          <div className='bg-white/90 rounded-xl shadow p-3'>
+            TOOLBAR PLACEHOLDER
+          </div>
+          <div className='bg-white/90 rounded-xl shadow p-3 h-[600px]'>
+            MAP PLACEHOLDER
+          </div>
+        </section>
+        <aside className='space-y-3'>
+          <div className='bg-white/90 rounded-xl shadow p-3'>
+            LEGEND PLACEHOLDER
+          </div>
+        </aside>
+      </main>
+    </div>
   )
 }
 
