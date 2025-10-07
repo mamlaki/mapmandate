@@ -1,4 +1,5 @@
 import './App.css'
+import MapCanvas from './components/MapCanvas'
 import Toolbar from './components/Toolbar'
 import Topbar from './components/Topbar'
 
@@ -13,9 +14,7 @@ function App() {
         <section className='space-y-3'>
           <Topbar />
           <Toolbar />
-          <div className='bg-white/90 rounded-xl shadow p-3 h-[600px]'>
-            MAP PLACEHOLDER
-          </div>
+          <MapCanvas />
         </section>
         <aside className='space-y-3'>
           <div className='bg-white/90 rounded-xl shadow p-3'>

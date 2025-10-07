@@ -60,7 +60,7 @@ export const SPLIT_UNITS: Record<string, string[]> = {
 export const EV_BY_UNIT: Record<string, number> = {
   ...Object.fromEntries(Object.keys(EV_BY_STATE).map(s => [s, EV_BY_STATE[s]])),
   'ME-AL': 2, 'ME-01': 1, 'ME-02': 1,
-  'NE-AL': 2, 'NE-01': 1, 'NE-03': 1
+  'NE-AL': 2, 'NE-01': 1, 'NE-02': 1, 'NE-03': 1
 };
 
 export const POLY_UNIT_FOR_STATE: Record<string, string> = {
