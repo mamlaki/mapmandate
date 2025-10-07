@@ -1,4 +1,6 @@
 import './App.css'
+import Toolbar from './components/Toolbar'
+import Topbar from './components/Topbar'
 
 function App() {
   return (
@@ -9,12 +11,8 @@ function App() {
       </header>
       <main className='max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-[1fr_18rem] gap-4'>
         <section className='space-y-3'>
-          <div className='bg-white/90 rounded-xl shadow p-3'>
-            TOPBAR PLACEHOLDER
-          </div>
-          <div className='bg-white/90 rounded-xl shadow p-3'>
-            TOOLBAR PLACEHOLDER
-          </div>
+          <Topbar />
+          <Toolbar />
           <div className='bg-white/90 rounded-xl shadow p-3 h-[600px]'>
             MAP PLACEHOLDER
           </div>
